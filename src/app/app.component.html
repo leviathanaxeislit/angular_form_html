@@ -1,1 +1,103 @@
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
 <h1> Self-ATC</h1>
+<form class="register" action="#helloworld">
+  <div>
+    <label for="name"><b>Enter your Name:</b></label>
+    <input
+      type="text"
+      placeholder="Name"
+      id="name"
+      name="name"
+      required
+    />
+  </div>
+  <div>
+    <label for="email"><b>Enter your email:</b></label>
+    <input
+      type="email"
+      placeholder="xxx@xxx.com"
+      id="email"
+      name="email"
+      required
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    />
+  </div>
+<div>
+  <label for="Age"><b>Age:</b></label>
+    <input type="number" placeholder="XX" id="age" name="age" required>
+</div>
+
+  <div>
+    <label for="datetime"><b>Enter DOB:</b></label>
+    <input type="date" id="datetime" name="datetime" />
+  </div>
+  <div>
+    <label for="username"><b>Enter your Profession:</b></label>
+    <input
+      type="text"
+      placeholder="Profession"
+      id="username"
+      name="username"
+      required
+    />
+  </div>
+
+  <br><b><h3></h3></b>
+  <div>
+    <label for="Products" id="products"><b>Products:</b></label>
+    <select name="Products" id="Products">
+      <option value="">Select one</option>
+      <option value="Wish">Wish</option>
+      <option value="Up!">Up!</option>
+      <option value="CTD">CTD</option></select
+    >
+  </div>
+  <div class="addition">
+    <label for="username"><b>Adjustment:</b></label>
+    <input
+      type="text"
+      placeholder="Adjustment"
+      id="username"
+      name="username"
+      required
+    />
+    <label for="username"><b>Time:</b></label>
+    <input
+      type="text"
+      placeholder="Time"
+      id="username"
+      name="username"
+      required
+    />
+    <label for="username"><b>Consequences</b></label>
+    <input
+      type="text"
+      placeholder="Consequences"
+      id="username"
+      name="username"
+      required
+    />
+    <script>
+      const div = document.getElementById('form-wrapper');
+
+function duplicateForm() {
+  let forms = div.getElementsByClassName('addition');
+  let firstForm = forms[0];
+  let formClone = firstForm.cloneNode(true);
+  div.appendChild(formClone);
+}
+</script>
+    <button type="button" onClick="duplicateForm();">Add</button>
+    
+
+  </div>
+ <div class="container-fluid"> <br><button type="submit" id="submit" class="submit" required>
+    <h2>Submit<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-box-arrow-in-right"viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+</svg></h2>
+  </button></div>
+</form>

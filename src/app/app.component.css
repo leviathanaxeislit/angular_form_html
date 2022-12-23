@@ -1,0 +1,9 @@
+body{
+align-self: center;
+}
+label {
+    font-weight: 400%;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+  }
